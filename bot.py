@@ -225,14 +225,14 @@ async def flip(ctx):
 
 @bot.command(pass_context=True)
 async def invite(ctx):
-    embed = discord.Embed(description = "**Invite**: https://discordapp.com/oauth2/authorize/?permissions=2138569983&scope=bot&bot_id=382933981357932545", color = 0xcd6800)
+    embed = discord.Embed(description = "**Invite**: https://discordapp.com/oauth2/authorize?&client_id=382933981357932545&scope=bot&permissions=8", color = 0xcd6800)
     return await bot.say(embed = embed)
 
 ###################################
 
 @bot.command(pass_context=True)
 async def support(ctx):
-    embed = discord.Embed(description = "**Support Server**: https://discord.gg/puz7474", color = 0xcd6800)
+    embed = discord.Embed(description = "**Support Server**: https://discord.gg/ktjbXyU", color = 0xcd6800)
     return await bot.say(embed = embed)
 
 ###################################
@@ -383,7 +383,7 @@ async def unmute(ctx,*, member : discord.Member):
 ###################################
 
 @bot.command(pass_context=True)
-async def warn (ctx,member : discord.Member = None,*,reason=None):
+async def warn (ctx,member : discord.Member,*,reason=None):
     serverroles=ctx.message.server.roles
     servermembers=ctx.message.server.roles
     if "Venus Mod" in [x.name for x in serverroles]:
@@ -534,7 +534,7 @@ async def unban(ctx,*, member):
 ###################################
 
 @bot.command(pass_context = True)
-async def ban(ctx,member : discord.Member = None,*, reason=None):
+async def ban(ctx,member : discord.Member,*, reason=None):
     serverroles=ctx.message.server.roles
     if "Venus Mod" in [x.name for x in serverroles]:
         if 'venus mod' in [r.name.lower() for r in ctx.message.author.roles]:
@@ -578,7 +578,7 @@ async def ban(ctx,member : discord.Member = None,*, reason=None):
 ###################################
 
 @bot.command(pass_context = True)
-async def kick(ctx,member : discord.Member = None,*, reason=None):
+async def kick(ctx,member : discord.Member,*, reason=None):
     serverroles=ctx.message.server.roles
     if "Venus Mod" in [x.name for x in serverroles]:
         if 'venus mod' in [r.name.lower() for r in ctx.message.author.roles]:
