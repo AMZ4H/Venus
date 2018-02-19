@@ -10,7 +10,7 @@ import time
 import os
 import sys
 
-command_prefix = "v" #CHANGE IT TO WHAT YOU WANT
+command_prefix = "v." #CHANGE IT TO WHAT YOU WANT
 bot = commands.Bot(command_prefix)
 bot.remove_command('help')
 
@@ -134,27 +134,27 @@ async def help(ctx):
     helpdesc=(":scroll: **Moderator Commands**\n"
               "\n"
               "»» (Bot needs Administrator permissions for these commands)\n"
-              "**Prefix = ** `!!`\n"
-              "**Important Command:**  `!!setup` \n"
+              "**Prefix = ** `v.`\n"
+              "**Important Command:**  `v.setup` \n"
               "\n"
-              " • `!!purge <message amount>` → deletes an amount of messages from the channel\n"
-              " • `!!getbans` → displays all currently banned members\n"
-              " • `!!listservers` → displays all current servers the bot has joined\n"
-              " • `!!kick <member mention` → kicks a member\n"
-              " • `!!ban <member mention>` → bans a member\n"
-              " • `!!unban <member mention>` → unbans a member\n"
-              " • `!!warn <member mention> <reason>` → warns a member\n"
-              " • `!!mute <member mention> <reason>` → mutes a member\n"
-              " • `!!unmute <member mention>` → unmutes a member\n"
-              " •`!!createroles` → Creates the bot roles **(ADMIN PERMISSIONS NEEDED)** \n"
+              " • `v.purge <message amount>` → deletes an amount of messages from the channel\n"
+              " • `v.getbans` → displays all currently banned members\n"
+              " • `v.listservers` → displays all current servers the bot has joined\n"
+              " • `v.kick <member mention` → kicks a member\n"
+              " • `v.ban <member mention>` → bans a member\n"
+              " • `v.unban <member mention>` → unbans a member\n"
+              " • `v.warn <member mention> <reason>` → warns a member\n"
+              " • `v.mute <member mention> <reason>` → mutes a member\n"
+              " • `v.unmute <member mention>` → unmutes a member\n"
+              " •`v.createroles` → Creates the bot roles **(ADMIN PERMISSIONS NEEDED)** \n"
               "\n"
               ":scroll: **User Commands**\n"
               "\n"
               "»» (Bot does **NOT** need Administrator permissions for these commands)\n"
-              " • `!!ping` → pings the bot\n"
-              " • `!!invite` → invites the bot\n"
-              " • `!!support` → invite link to the bot's support server \n"
-              " • `!!flip` → flips a coin\n")
+              " • `v.ping` → pings the bot\n"
+              " • `v.invite` → invites the bot\n"
+              " • `v.support` → invite link to the bot's support server \n"
+              " • `v.flip` → flips a coin\n")
 
     
 
@@ -170,7 +170,7 @@ async def help(ctx):
 @bot.command(pass_context = True)
 async def setup(ctx):
     setupdesc=("1. Give the bot **Administrator Permissions**\n"
-               "2. Use the `!!createroles` command to create needed roles (`!!help` for information)\n"
+               "2. Use the `v.createroles` command to create needed roles (`v.help` for information)\n"
                "3. To use **Moderator** commands, give the specified user the **Venus Mod** role\n"
                "*Note:  Ignore the **Venus Muted** role (It will be used for the mute command)*")
 
