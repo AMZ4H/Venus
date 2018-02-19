@@ -633,4 +633,4 @@ async def listservers(ctx):
 
 
 
-bot.run('MzgyOTMzOTgxMzU3OTMyNTQ1.DRFDlA.ftiGVZXq2WoUo7qOHoe1TbC4jo0')
+bot.run('Token')
